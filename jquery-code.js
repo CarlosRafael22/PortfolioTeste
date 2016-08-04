@@ -2,19 +2,19 @@ var main = function(){
 
 	$('#nav-goals').click(function(){
 		//e.preventDefault();
-    	$('html,body').stop().animate({scrollTop:$('#goals').offset().top}, "slow");
+    	$('html,body').stop().animate({scrollTop:$('#goals').offset().top-50}, "slow");
 		//alert("asdasda");
 	});
 
 	$('#nav-projects').click(function(){
 		//e.preventDefault();
-		$('html,body').stop().animate({scrollTop:$('#projects').offset().top}, "slow");
+		$('html,body').stop().animate({scrollTop:$('#projects').offset().top-50}, "slow");
 		//alert("asdasda");
 	});
 
 	$('#nav-contact').click(function(){
 		//e.preventDefault();
-		$('html,body').stop().animate({scrollTop:$('#contact').offset().top}, "slow");
+		$('html,body').stop().animate({scrollTop:$('#contact').offset().top-50}, "slow");
 		//alert("asdasda");
 	});
 	

@@ -27,6 +27,47 @@
       }
     }
 
+    .box{
+      height: 300px;
+    }
+
+    /*
+    CSS scale down image to fit in containing div, without specifing original size
+
+    Auto will increase (or decrease) the width and height to occupy the space you specify with MaxSize. It will over ride any defaults for images you or the viewer's browser might have for images. I've found it's especially important on Android's Firefox. Pixels or percentages work for max size. With both the height and width set to auto the aspect ratio of the original image will be retained.
+
+    If you want to fill the space entirely and don't mind the image being larger than its original size, change the two max-widths to min-width: 100% - this will make them completely occupy their space and maintain aspect ration. You can see an example of this with a Twitter profile's background image.
+    */
+
+/*    img{
+      width:auto;
+      height:auto;
+      max-width:100%;
+      max-height:100%;
+    }
+*/
+    .logo{
+      height: 200px;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .img-responsive{
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+
+      display: block;
+      margin: auto;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
     </style>
   </head>
 
@@ -61,6 +102,29 @@
     <div class="jumbotron main">
       <h2>Testando saporra pra ve se ta certo!</h2>
       <p>Vamo ver se essa merda fica responsiva mesmo. Tem que aprender secarai!</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 box" style="background-color: blue;">
+          <div class="logo">
+            <img src="faro.png" class="img-responsive">
+          </div>
+          
+          
+        </div>
+        <div class="col-md-4 box" style="background-color: green;">
+          <div class="logo">
+            <img src="geekdoctor.png" class="img-responsive">
+          </div>
+          
+        </div>
+        <div class="col-md-4 box" style="background-color: red;">
+          <div class="logo">
+            <img src="bionica.png" class="img-responsive">
+          </div>
+          
+        </div>
+      </div>
     </div>
   </div>
 

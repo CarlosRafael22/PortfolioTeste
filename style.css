@@ -112,13 +112,20 @@ body{
     background-color: #cff5fb;
     /* border-top: 1px solid #adadad; */
     min-height: 550px;
-    /*padding-top: 50px;*/
+    padding-top: 5em;
 }
 
 .goal-box{
 	height: 550px;
 	text-align: center;
 	padding-top: 50px;
+}
+
+@media screen and (max-width: 500px){
+	.goal-box{
+		height: auto;
+		text-align: center;
+	}
 }
 
 .goal-box p{
@@ -147,21 +154,29 @@ body{
 
 /* /////////////////////////////////////////////////////////// */
 
-
+/*section{
+	padding: 50px 0;
+}*/
 
 /* SECTION DOS PROJETOS */
 .projects{
 	
 	background-color: #cff5fb;
+	padding-bottom: 5em;
 }
 
 .projects-title{
 	text-align: center;
 	/*margin: 0px 300px 0px 300px;*/
 	padding-top: 30px;
-	padding-bottom: 5px;
+	margin-bottom: 0;
 	font-size: 4em;
-	border-bottom: 3px solid gray;
+}
+
+hr {
+    border-color: #F05F40;
+    border-width: 3px;
+    max-width: 10em;
 }
 
 /*
@@ -170,7 +185,6 @@ body{
 
 .startup-logo{
 	height: 200px;
-	width: 300px;
 	/*Parte da gambiarra pra centralizar o div de dentro*/
 	position: relative;
 	margin: 0 auto;
@@ -182,9 +196,14 @@ body{
 	http://stackoverflow.com/questions/34552116/why-doesnt-margin-auto-center-an-element-vertically?noredirect=1&lq=1
 	*/
 .centered-img{
+
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
 	
 	margin: auto;
-
+/*	width: 100%;
+	height: 100%;*/
 	/*Gambiarra pra fazer com q centralize*/
 	position: absolute;
 	top: 0;
@@ -192,6 +211,13 @@ body{
 	left: 0;
 	right: 0;
 }
+
+/*img{
+      width:auto;
+      height:auto;
+      max-width:100%;
+      max-height:100%;
+    }*/
 
 /* FAZER ISSO PRA NAO TER MARGENS NEGATIVAS E O CONTEUDO SAIR DO DIV MAIOR */
 .row{
@@ -202,6 +228,10 @@ body{
 	padding-top: 30px;
 }
 
+.col-md-4{
+	padding: 0.5em;
+}
+
 .project-box{
 	/*padding: 30px;*/
 	/*border: 3px solid black;*/
@@ -209,7 +239,7 @@ body{
 	background-color: #adadad;
 	border-radius: 6px;
     border: solid 1px rgba(144, 144, 144, 0.25);
-    /*margin: 0.25em;*/
+    margin: 15px;
     padding: 0.5em;
 }
 
